@@ -45,7 +45,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
         myTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/flat.ttf");
 
-        holder.Name.setText(contactslist.get(position).getName());
+        holder.Name.setText(contactslist.get(position).getname());
         holder.Name.setTypeface(myTypeface);
         Glide.with(context).load(contactslist.get(position).getImg()).error(R.drawable.logo).into(holder.image);
         mInterstitialAd = new InterstitialAd(context);
@@ -56,7 +56,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             @Override
             public void onClick(View view) {
                 int id=contactslist.get(position).getId();
-                String name=contactslist.get(position).getName();
+                String name=contactslist.get(position).getname();
                 int point=contactslist.get(position).getPoint();
                 int time=contactslist.get(position).getTime();
                 String image=contactslist.get(position).getImg();

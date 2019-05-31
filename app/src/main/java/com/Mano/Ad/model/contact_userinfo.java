@@ -10,16 +10,17 @@ public class contact_userinfo {
     String name;
     @SerializedName("phone")
     String phone;
-    @SerializedName("address")
+    @SerializedName("maddress")
     String maddress;
     @SerializedName("password")
     String Password;
-    @SerializedName("point")
+    @SerializedName("points")
     String Points;
-    @SerializedName("country")
+    @SerializedName("governorate")
     String Country;
     @SerializedName("age")
     String Age;
+
 
     public String getPhone() {
         return phone;

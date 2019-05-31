@@ -8,7 +8,7 @@ public class contact_home_realm  extends RealmObject {
     int id;
     @SerializedName("name")
     String name;
-    @SerializedName("image")
+    @SerializedName("img")
     String Img;
 
     public int getId() {

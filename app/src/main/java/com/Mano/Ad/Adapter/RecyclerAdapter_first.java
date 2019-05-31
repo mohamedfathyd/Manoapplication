@@ -52,7 +52,7 @@ public class RecyclerAdapter_first extends RecyclerView.Adapter<RecyclerAdapter_
             public void onClick(View view) {
 
                 Intent intent=new Intent(context, first_second_category.class);
-                intent.putExtra("name",contactslist.get(position).getName());
+                intent.putExtra("name",contactslist.get(position).getname());
                 intent.putExtra("id",contactslist.get(position).getId());
                 context.startActivity(intent);}
 

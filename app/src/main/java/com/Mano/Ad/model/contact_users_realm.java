@@ -10,16 +10,17 @@ public class contact_users_realm  extends RealmObject {
     String name;
     @SerializedName("phone")
     String phone;
-@SerializedName("address")
-String maddress;
-@SerializedName("password")
-String Password;
-@SerializedName("point")
-String Point;
-@SerializedName("country")
-String Country;
-@SerializedName("age")
-String Age;
+    @SerializedName("maddress")
+    String maddress;
+    @SerializedName("password")
+    String Password;
+    @SerializedName("points")
+    String Point;
+    @SerializedName("governorate")
+    String Country;
+    @SerializedName("age")
+    String Age;
+
 
     public String getPhone() {
         return phone;

@@ -10,13 +10,13 @@ public class contact_users {
     String name;
     @SerializedName("phone")
     String phone;
-    @SerializedName("address")
+    @SerializedName("maddress")
     String maddress;
     @SerializedName("password")
     String Password;
-    @SerializedName("point")
+    @SerializedName("points")
     String Point;
-    @SerializedName("country")
+    @SerializedName("governorate")
     String Country;
     @SerializedName("age")
     String Age;
