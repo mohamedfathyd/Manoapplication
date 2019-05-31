@@ -88,7 +88,7 @@ protected void onCreate(Bundle savedInstanceState) {
         progressBar=(ProgressBar)findViewById(R.id.progressBar_subject);
         progressBar.setVisibility(View.VISIBLE);
         layoutManager = new GridLayoutManager(this, 3);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true));
+        recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView2=(RecyclerView)findViewById(R.id.recyclerview2);
         layoutManager = new GridLayoutManager(this, 1);

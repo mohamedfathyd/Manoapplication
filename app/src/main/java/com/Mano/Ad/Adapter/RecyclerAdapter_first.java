@@ -44,7 +44,7 @@ public class RecyclerAdapter_first extends RecyclerView.Adapter<RecyclerAdapter_
 
         myTypeface = Typeface.createFromAsset(context.getAssets(), "fonts/flat.ttf");
 
-        holder.Name.setText(contactslist.get(position).getImg());
+        holder.Name.setText(contactslist.get(position).getname());
         holder.Name.setTypeface(myTypeface);
         Glide.with(context).load(contactslist.get(position).getImg()).error(R.drawable.logo).into(holder.image);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
