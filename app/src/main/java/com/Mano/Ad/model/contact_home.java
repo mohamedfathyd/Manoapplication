@@ -19,11 +19,11 @@ public class contact_home{
         this.id = id;
     }
 
-    public String getName() {
+    public String getname() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setname(String name) {
         this.name = name;
     }
 
