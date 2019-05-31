@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "980180119848",
+    "firebase_url": "https://manoad-96497.firebaseio.com",
+    "project_id": "manoad-96497",
+    "storage_bucket": "manoad-96497.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980180119848:android:902f12508d151dc5",
+        "android_client_info": {
+          "package_name": "com.Mano.Ad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980180119848-um0r9ub8uaj9a8c6rveh27tv8sa8t100.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Mano.Ad",
+            "certificate_hash": "22fd65c93727d47d3cf5938ca60e08c55096fe37"
+          }
+        },
+        {
+          "client_id": "980180119848-gai81kpmtmc70dlj4gaubv6arf3lm8s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-qiTBr587UulrWbKpXlQzoBh1RsB0U8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980180119848-gai81kpmtmc70dlj4gaubv6arf3lm8s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

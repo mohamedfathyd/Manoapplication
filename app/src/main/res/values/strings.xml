@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Mano Ad</string>
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">الأسم</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">رقم الموبايل</string>
+    <string name="hint_address"> البريد الألكترونى</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="text_login">تسجيل الدخول</string>
+    <string name="text_register">انشاء حساب</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">لأنشاء حساب جديد ؟ اضغط للأنشاء</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">Android Tutorials Hub</string>
+    <string name="tex">اختر الفئة المفضلة لك </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+</resources>

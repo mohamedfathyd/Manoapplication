@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main"
+            android:icon="@drawable/ic_line_weight_black_24dp"
+            android:title="الرئيسية " />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="بيانات المستخدم" />
+        <item
+            android:id="@+id/edit"
+            android:icon="@drawable/edit"
+            android:title="تعديل البيانات " />
+        <item
+            android:id="@+id/extra"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="كود الربح " />
+        <item
+            android:id="@+id/user_list"
+            android:icon="@drawable/ic_assessment_black_24dp"
+            android:title="ترتيب المستخدمين" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="عن البرنامج " />
+        <item
+            android:id="@+id/who"
+            android:icon="@drawable/ic_sms_failed_black_24dp"
+            android:title="من نحن" />
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/exit"
+            android:title="تسجيل خروج" />
+
+    </group>
+
+
+</menu>

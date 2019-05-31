@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorText"
+    android:layout_marginTop="10dp"
+    android:layoutDirection="rtl">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+
+        tools:layout_editor_absoluteY="102dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.3"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.4"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/img"
+                        android:background="@drawable/logo" />
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:scrollbars="vertical"
+                        android:layout_weight="1.5"
+                        android:id="@+id/recyclerview2"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/img"
+                        app:reverseLayout="true"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:id="@+id/tex"
+                android:text="@string/tex"
+                android:textColor="@color/colora"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tex"
+                android:id="@+id/vie"
+                android:layout_margin="10dp"
+                android:background="@color/colora"
+
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scrollbars="vertical"
+                android:layout_weight="1.5"
+                android:id="@+id/recyclerview"
+
+                android:orientation="horizontal"
+                android:layout_below="@+id/vie"
+                app:reverseLayout="true"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_subject"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:visibility="visible" />
+
+</RelativeLayout>
