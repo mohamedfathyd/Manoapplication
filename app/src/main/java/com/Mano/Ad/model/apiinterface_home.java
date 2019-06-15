@@ -53,7 +53,7 @@ Call<List<contact_annonce>> getcontacts_annonce();
     @POST("Mano_adtoshare.php")
     Call<ResponseBody> getcontacts_addtoview_share(@Field("ad_id") int ad_id ,@Field("user_phone") String user_phone);
     @FormUrlEncoded
-    @POST("Mano_updateuser.php")
+    @POST("Mano_user.php")
     Call<ResponseBody> getcontacts_newaccount(@Field("name") String name,@Field("password") String password, @Field("address")String address,
                                                  @Field("phone") String phone ,@Field("country")String country,  @Field("age") int age ,@Field("id")int id);
 

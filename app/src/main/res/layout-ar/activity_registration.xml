@@ -153,6 +153,7 @@
                 android:hint=" الشخص الذي دعاك ان وجد ؟
 ID"
                 android:inputType="number"
+                android:text="0"
                 android:maxLines="1"
                 android:textColor="@color/colora" />
         </android.support.design.widget.TextInputLayout>

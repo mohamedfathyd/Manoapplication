@@ -209,9 +209,13 @@ public class Registration extends AppCompatActivity {
         progressDialog = ProgressDialog.show(Registration.this, "جاري انشاء الحساب", "Please wait...", false, false);
         progressDialog.show();
         String phone="+2"+textInputEditTextphone.getText().toString();
-        int x= Integer.parseInt(textInputEditTextr.getText().toString());
-        if(textInputEditTextr.getText().toString().equals("")){
+        int x=0;
+      //  int x= Integer.parseInt(textInputEditTextr.getText().toString());
+        if(textInputEditTextr.getText().toString().equals("")||textInputEditTextr.getText().toString()==null){
             x=0;
+        }
+        else{
+            x= Integer.parseInt(textInputEditTextr.getText().toString());
         }
         apiinterface = Apiclient_home.getapiClient().create(apiinterface_home.class);
         Call<ResponseBody> call = apiinterface.getcontacts_newaccount(textInputEditTextname.getText().toString(),
@@ -222,8 +226,7 @@ public class Registration extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 progressDialog.dismiss();
-
-                AlertDialog.Builder dlgAlert = new AlertDialog.Builder(Registration.this);
+            AlertDialog.Builder dlgAlert = new AlertDialog.Builder(Registration.this);
                 dlgAlert.setMessage("تم أنشاء حساب جديد بنجاح");
                 dlgAlert.setTitle("مشوارى");
                 dlgAlert.setPositiveButton("OK", null);
