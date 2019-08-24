@@ -62,7 +62,7 @@ private SharedPreferences sharedpref;
         Typeface myTypeface;
 private SharedPreferences.Editor edt;
 TextView points;
-
+    login__ login__;
 @Override
 protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +80,10 @@ protected void onCreate(Bundle savedInstanceState) {
         myTypeface = Typeface.createFromAsset(getAssets(), "fonts/flat.ttf");
         sharedpref= getSharedPreferences("ManoAd", Context.MODE_PRIVATE);
              edt = sharedpref.edit();
-        textView.setText(sharedpref.getString("name","").trim());
+    login__=new login__();
+    login__.fetchInfo(this,sharedpref.getString("phone","").trim(),sharedpref.getString("password","").trim());
+
+    textView.setText(sharedpref.getString("name","").trim());
         textView.setTypeface(myTypeface);
     points.setTypeface(myTypeface);
     points.setText(sharedpref.getString("points","").trim()+" Pt");
@@ -162,6 +165,10 @@ public boolean onNavigationItemSelected(MenuItem item) {
 
         }
           if(id == R.id.main){
+              login__=new login__();
+              login__.fetchInfo(this,sharedpref.getString("phone","").trim(),sharedpref.getString("password","").trim());
+
+
                   startActivity(new Intent(MainActivity.this,MainActivity.class));
                   finish();
           }
